@@ -43,7 +43,7 @@ Confusion of O with 0
 
 Errors detecting license plates with a large number of characters.
 
-In contrast, the filters used in the project that uses paddleocr are much faster and do not offer improvements (they do not provide any improvements).
+In contras tusing fast-plate-ocr is faster  the filters used in the project that uses paddleocr are avoided (they do not provide any improvements).
 
 References
 
