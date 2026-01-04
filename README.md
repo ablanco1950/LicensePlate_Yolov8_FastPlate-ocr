@@ -2,7 +2,7 @@
 Car license plate recognition test using fast_plate_ocr
 Installation:
 
-Download and extract the project, then extract the .zip files containing the test images Test and Test1.
+Download and extract the project, then extract the .zip files containing the test images (images from Roboflow) Test and Test1.
 
 fast_plate_ocr works with Python 3.10 or higher, so you must install this version.
 
