@@ -28,7 +28,7 @@ Observations
 
 The best.pt model, obtained from the project
 
-https://github.com/ablanco1950/DetectSpeedLicensePlate_Yolov8_Filters_PaddleOCR, is used for license plate detection.
+https://github.com/ablanco1950/LicensePlate_Yolov8_Filters_PaddleOCR , is used for license plate detection.
 
 Both this project and the current one meet the two conditions: they can be run from a personal computer and they use OCR tools from open sources that do not require an API key.
 
@@ -50,4 +50,4 @@ References
 
 https://github.com/ankandrew/fast-plate-ocr
 
-https://github.com/ablanco1950/DetectSpeedLicensePlate_Yolov8_Filters_PaddleOCR
+https://github.com/ablanco1950/LicensePlate_Yolov8_Filters_PaddleOCR
