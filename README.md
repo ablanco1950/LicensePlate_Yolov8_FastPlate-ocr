@@ -18,7 +18,7 @@ python pip-script.py install imutils
 
 python pip-script.py install scikit-image
 
-Perform the evaluation Running:
+Perform the evaluation running:
 
 python GetNumberInternationalLicensePlate_Yolov8_FastPlate-ocr.py
 
