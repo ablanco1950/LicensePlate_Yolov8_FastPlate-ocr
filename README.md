@@ -1,5 +1,8 @@
 # LicensePlate_Yolov8_FastPlate-ocr
 Car license plate recognition test using fast_plate_ocr
+
+Updated on 27/06/2026 incorporating a new model and updating the program that caused errors in older versions
+
 Installation:
 
 Download and extract the project, then extract the .zip files containing the test images (images from Roboflow) Test and Test1.
@@ -32,7 +35,7 @@ https://github.com/ablanco1950/LicensePlate_Yolov8_Filters_PaddleOCR , is used f
 
 Both this project and the current one meet the two conditions: they can be run from a personal computer and they use OCR tools from open sources that do not require an API key.
 
-By changing line 7 in the previously executed evaluation program, replacing "Test1" with "Test" and running it, the result was 12 correct detections out of 25 images (The images in Test1 folder appear with the car license plate facing forward, while in Test they do not.). However, running the evaluation performed in the project https://github.com/ablanco1950/DetectSpeedLicensePlate_Yolov8_Filters_PaddleOCR gives 20 hits from 25 images tested.
+By changing line 7 in the previously executed evaluation program, replacing "Test1" with "Test" and running it, the result was 14 correct detections out of 25 images (The images in Test1 folder appear with the car license plate facing forward, while in Test they do not.). However, running the evaluation performed in the project https://github.com/ablanco1950/DetectSpeedLicensePlate_Yolov8_Filters_PaddleOCR gives 20 hits from 25 images tested.
 
 This would indicate superior detection with paddleocr over fast-plate-ocr.
 
