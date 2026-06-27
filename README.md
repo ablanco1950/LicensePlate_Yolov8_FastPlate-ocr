@@ -37,7 +37,7 @@ Both this project and the current one meet the two conditions: they can be run f
 
 By changing line 7 in the previously executed evaluation program, replacing "Test1" with "Test" and running it, the result was 14 correct detections out of 25 images (The images in Test1 folder appear with the car license plate facing forward, while in Test they do not.). However, running the evaluation performed in the project https://github.com/ablanco1950/DetectSpeedLicensePlate_Yolov8_Filters_PaddleOCR gives 20 hits from 25 images tested.
 
-This would indicate superior detection with paddleocr over fast-plate-ocr.
+This would indicate superior detection with paddleocr over fast-plate-ocr. In contrast, fast-plate-ocr provides more information that can be used, such as the region of the car and the confidence of each of the characters detected on the license plate.
 
 The errors detected in the detection with fast-plate-ocr consisted of:
 
