@@ -7,7 +7,8 @@ Author: Alfonso Blanco
 
 """
 
-dirname= "Test1"
+#dirname= "Test1"
+dirname= "Test"
 
 from fast_plate_ocr import LicensePlateRecognizer
 
@@ -97,12 +98,19 @@ def GetRotationImage(image):
            
 
 def GetFastPlate_ocr(img):
-    m = LicensePlateRecognizer('cct-xs-v1-global-model')
-    #print(m.run('test_plate.png'))
+    #m = LicensePlateRecognizer('cct-xs-v1-global-model')
+    m = LicensePlateRecognizer('cct-s-v2-global-model')
+    
+    
     cv2.imwrite("gray.jpg",img)
     img_path = 'gray.jpg'
-    text= m.run(img_path)
-    return text[0], 0.0
+    #text= m.run(img_path)
+    
+    pred= m.run(img_path, return_confidence=True)
+    print(pred)
+    
+    
+    return pred[0].plate, pred[0].char_probs,pred[0].region,pred[0].region_prob
 #########################################################################
 def FindLicenseNumber (gray, x_offset, y_offset,  License, x_resize, y_resize, \
                        Resize_xfactor, Resize_yfactor, BilateralOption):
@@ -145,12 +153,12 @@ def FindLicenseNumber (gray, x_offset, y_offset,  License, x_resize, y_resize, \
    
     TotHits=0
 
-    text, Accuraccy = GetFastPlate_ocr(gray)
+    text, Accuraccy, region, region_prob = GetFastPlate_ocr(gray)
 
     #print(text)
     #print(RR)
 
-    print( "DETECTED " + text)
+    print( "DETECTED " + str(text))
    
     text = ''.join(char for char in text if char.isalnum())
     
