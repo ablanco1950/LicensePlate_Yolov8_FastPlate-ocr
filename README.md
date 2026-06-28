@@ -33,11 +33,11 @@ The best.pt model, obtained from the project
 
 https://github.com/ablanco1950/LicensePlate_Yolov8_Filters_PaddleOCR , is used for license plate detection.
 
-Both this project and the current one meet the two conditions: they can be run from a personal computer and they use OCR tools from open sources that do not require an API key.
+Both this project and the current one meet the two conditions: they can be run from a personal computer and they use OCR tools from open sources that do not require an API key. 
 
-By changing line 7 in the previously executed evaluation program, replacing "Test1" with "Test" and running it, the result was 14 correct detections out of 25 images (The images in Test1 folder appear with the car license plate facing forward, while in Test they do not.). However, running the evaluation performed in the project https://github.com/ablanco1950/DetectSpeedLicensePlate_Yolov8_Filters_PaddleOCR gives 20 hits from 25 images tested.
+By changing line 7 in the previously executed evaluation program, replacing "Test1" with "Test" and running it, the result was 14 correct detections out of 25 images (The images in Test1 folder appear with the car license plate facing forward, while in Test they do not).
 
-This would indicate superior detection with paddleocr over fast-plate-ocr. In contrast, fast-plate-ocr provides more information that can be used, such as the region of the car and the confidence of each of the characters detected on the license plate.
+An Excel spreadsheet, ComparisonWithDOUBANGOAndHuggingFace.xls, is attached allowing for comparison with other systems. The success rate appears to be lower. In contrast, fast-plate-ocr provides more information that can be used, such as the region of the car and the confidence of each of the characters detected on the license plate.In addition to the greater speed of Fastplate_ocr, the times used by Fastplate_ocr barely exceed 100ms and together with the program loading time do not reach 1 second per image.
 
 The errors detected in the detection with fast-plate-ocr consisted of:
 
