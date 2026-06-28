@@ -37,7 +37,7 @@ Both this project and the current one meet the two conditions: they can be run f
 
 By changing line 7 in the previously executed evaluation program, replacing "Test1" with "Test" and running it, the result was 14 correct detections out of 25 images (The images in Test1 folder appear with the car license plate facing forward, while in Test they do not).
 
-An Excel spreadsheet, ComparisonWithDOUBANGOAndHuggingFace.xls, is attached allowing for comparison with other systems. The success rate appears to be lower. In contrast, fast-plate-ocr provides more information that can be used, such as the region of the car and the confidence of each of the characters detected on the license plate.In addition to the greater speed of Fastplate_ocr, the times used by Fastplate_ocr barely exceed 100ms and together with the program loading time do not reach 1 second per image.
+An Excel spreadsheet, ComparisonWithDOUBANGOAndHuggingFace.xls, is attached allowing for comparison with other systems. The success rate appears to be lower. In contrast, fast-plate-ocr provides more information that can be used, such as the region of the car and the confidence of each of the characters detected on the license plate.In addition to the greater speed of Fastplate_ocr: the times used by Fastplate_ocr barely exceed 100ms and together with the program loading time do not reach 1 second per image.
 
 The errors detected in the detection with fast-plate-ocr consisted of:
 
